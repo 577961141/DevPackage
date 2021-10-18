@@ -32,12 +32,5 @@ class MessageServiceProvider extends ServiceProvider
         // 加载扩展包的配置文件
         $this->mergeConfigFrom(__DIR__.'/config/message.php', 'message');
 
-        // 进行包发布(命令：php artisan vendor:push,然后选择你的包)
-        $this->publishes([
-            // 发布配置文件(发布后的配置文件会在/config目录下)
-            __DIR__ . '/config/message.php' => config_path('message.php'),
-            // 帆布视图文件(发布后的视图文件会在resource/views/vendor/message下)
-            __DIR__ . '/views' => resource_path('views/vendor/message')
-        ]);
     }
 }
