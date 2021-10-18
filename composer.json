@@ -15,5 +15,12 @@
         "psr-4": {
             "DevPackage\\Message\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bitfumes\\Contact\\ContactServiceProvider"
+            ]
+        }
     }
 }
