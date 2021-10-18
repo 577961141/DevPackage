@@ -19,7 +19,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Bitfumes\\Contact\\ContactServiceProvider"
+                "DevPackage\\Message\\MessageServiceProvider"
             ]
         }
     }
